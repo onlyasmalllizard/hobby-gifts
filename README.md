@@ -1,70 +1,17 @@
-# Getting Started with Create React App
+# HobbyGifts
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A website where users can provide information on items that are useful for their hobbies and interests. Intended to reduce the urge to give generic gifts and discourage sales of useless items designed to commercialise holidays.
 
-## Available Scripts
+## Functionality
 
-In the project directory, you can run:
+There are two types of user of this platform: list-makers and gift-givers. Account creation is only necessary for list-makers.
 
-### `yarn start`
+### List-makers
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+A user will create a login, which will require minimal data (email, password, display name). They will then be walked through creating a list of tools and materials used for one of their hobbies. Each item will have fields for them to provide enough detail that someone who is unfamiliar with the hobby should be able to purchase a suitable version of it. There will be a required field to explain why the item is useful and meaningful in order to promote understanding and fulfillment in gift-givers. Users will be able to add additional hobbies with their own lists if they please.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The user will receive an auto-generated link to a display page. They can share this however they please. Importantly, this website does not store details on how to deliver any gifts to the person. This must be provided separately, and helps prevent harrasment of users. There will be an option to regenerate the link to the display page if someone they don't want to have the link discovers it.
 
-### `yarn test`
+### Gift-givers
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The user follows the link sent to them and sees the display page listing the hobbies of the user. Choosing a hobby expands the list of items related to that hobby.
