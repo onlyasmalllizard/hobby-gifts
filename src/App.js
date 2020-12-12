@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import './App.css';
 
 import data from './testdata.js';
@@ -73,12 +75,12 @@ const DisplaySelector = ({ isLoggedIn, setDisplay }) => {
 };
 
 const About = () => {
-  return <section>This is the sample about.</section>;
+  return <section class='content'>This is the sample about.</section>;
 };
 
 const CreateAccount = () => {
   return (
-    <section>
+    <section class='content'>
       <h2>Create New Account</h2>
       <form action=''>
         <label for='display-name'>Display Name</label>
@@ -102,7 +104,7 @@ const Login = ({ changeLoginStatus }) => {
   };
 
   return (
-    <section>
+    <section class='content'>
       <form action={handleSubmit}>
         <label for='email'>Email</label>
         <input type='email' name='email' required />
@@ -115,7 +117,18 @@ const Login = ({ changeLoginStatus }) => {
 };
 
 const Lists = () => {
-  return <section>Placeholder for lists.</section>;
+  return (
+    <section class='content'>
+      {data.map((list) => (
+        <article key={new Date().getTime().toString()} class='hobby'>
+          {list.hobbyName}
+          <button class='btn list-btn'>
+            <FontAwesomeIcon icon={faPlus} />
+          </button>
+        </article>
+      ))}
+    </section>
+  );
 };
 
 export default App;
